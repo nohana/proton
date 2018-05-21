@@ -3,14 +3,13 @@ package proton.inject.activity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 
 import proton.inject.Injector;
 import proton.inject.Proton;
 import proton.inject.observer.ObserverManager;
 import proton.inject.observer.event.OnActivityResultEvent;
 import proton.inject.observer.event.OnConfigurationChangedEvent;
-import proton.inject.observer.event.OnContentChangedEvent;
 import proton.inject.observer.event.OnCreateEvent;
 import proton.inject.observer.event.OnDestroyEvent;
 import proton.inject.observer.event.OnNewIntentEvent;
@@ -22,7 +21,7 @@ import proton.inject.observer.event.OnStartEvent;
 import proton.inject.observer.event.OnStopEvent;
 import proton.inject.state.StateEventObserver;
 
-public class ProtonActionBarActivity extends ActionBarActivity {
+public class ProtonActionBarActivity extends AppCompatActivity {
     private ObserverManager mObserverManager;
     @SuppressWarnings("unused")
     private StateEventObserver mStateEventObserver;
